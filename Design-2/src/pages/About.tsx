@@ -711,7 +711,7 @@ const AboutUs = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="text-lg font-bold tracking-wider">APPLY FOR FUNDING</span>
+            <span className="text-lg font-bold tracking-wider">Get Started</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             
             {/* Pulsing glow */}
