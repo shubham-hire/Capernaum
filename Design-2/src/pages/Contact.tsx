@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { motion, useScroll, useTransform, useMotionValue, useMotionTemplate, useSpring } from 'framer-motion';
-import { ArrowRight, MapPin, Mail, Clock, Phone, Send } from 'lucide-react';
+import { motion, useScroll, useTransform, useMotionValue, useMotionTemplate } from 'framer-motion';
+import { ArrowRight, MapPin, Mail, Clock, Send } from 'lucide-react';
 
 // ─── Floating Particle ──────────────────────────────────────────
 const FloatingParticle = ({ delay, size, x, y, duration }: { delay: number; size: number; x: string; y: string; duration: number }) => (
@@ -31,9 +31,9 @@ const staggerItem = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const },
   },
-};
+} as const;
 
 // ═════════════════════════════════════════════════════════════════
 // HERO SECTION

@@ -129,9 +129,9 @@ const staggerItem = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as const },
   },
-};
+} as const;
 
 // ─── Our Mission Section ─────────────────────────────────────────
 const OurMission = () => {
@@ -294,7 +294,6 @@ const AboutUs = () => {
     offset: ["start end", "end start"]
   });
   const globeRotate = useTransform(visionScroll, [0, 1], [0, 360]);
-  const globeScale = useTransform(visionScroll, [0, 0.5, 1], [0.8, 1, 0.9]);
 
   return (
     <div className="relative text-white overflow-hidden">
