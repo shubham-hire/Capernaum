@@ -6,6 +6,9 @@ import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import AboutUs from './pages/About';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -44,12 +47,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
-        {/* Footer Placeholder for visual balance - could be a component too */}
-        <footer className="py-10 text-center text-gray-600 text-sm border-t border-white/5 mt-auto">
-          © 2026 Capernum Solutions. All rights reserved.
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
