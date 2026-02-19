@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useMotionValue, useMotionTemplate, useSpring, useInView } from 'framer-motion';
-import { ArrowRight, Globe, TrendingUp, Users, Coins, Headphones, Settings, Heart, Phone, Shield, GraduationCap, Target, Monitor, CheckCircle, UserCheck } from 'lucide-react';
+import { ArrowRight, Globe, TrendingUp, Users, Coins, Headphones, Settings, Heart, Phone, Shield, GraduationCap, Target, Monitor, CheckCircle, } from 'lucide-react';
 
 // ─── Animated Counter Component ─────────────────────────────────
 const AnimatedCounter = ({ value, suffix = "" }: { value: string, suffix?: string }) => {
